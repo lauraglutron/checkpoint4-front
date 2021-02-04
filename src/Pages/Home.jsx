@@ -39,6 +39,7 @@ const TitleHome = styled.h1`
 const Paragraphe = styled.p`
   letter-spacing: 0.1em;
   text-align: justify;
+  color: black;
 `;
 
 export default Home;

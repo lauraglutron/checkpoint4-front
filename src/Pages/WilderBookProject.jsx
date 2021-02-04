@@ -9,6 +9,7 @@ import {
   Spinner,
   UncontrolledCarousel,
 } from "reactstrap";
+import styled from "styled-components";
 
 const items = [
   {
@@ -63,51 +64,28 @@ const WilderBookProject = (props) => {
 
   return (
     <>
-      <div>
-        <h1>Wilder Book</h1>
-      </div>
       <Row className="m-5">
-        <Col sm={6}>
+        <Col sm="6">
           <UncontrolledCarousel items={items} />
         </Col>
-        <Col sm={6}>
-          <Card body outline color="info" className="text-center">
-            <CardTitle>{projects[0].title}</CardTitle>
+        <Col sm="6">
+          <CardStyle body outline color="dark" className="text-center p-4">
+            <CardTitle tag="h2">{projects[0].title}</CardTitle>
             <CardText>{projects[0].date}</CardText>
             <CardText>{projects[0].link}</CardText>
+            <hr />
             <CardText>{projects[0].description}</CardText>
             <CardText>{projects[0].maintech}</CardText>
             <CardText>{projects[0].id_clients}</CardText>
-          </Card>
+          </CardStyle>
         </Col>
       </Row>
     </>
   );
 };
 
-export default WilderBookProject;
+const CardStyle = styled(Card)`
+  letter-spacing: 0.1em;
+`;
 
-// <>
-//   <Row>
-//     {loading ? (
-//       <Col className="text-center">
-//         <Spinner size="xl" color="info" />
-//       </Col>
-//     ) : (
-//       projects.map((project) => {
-//         return (
-//           <Project
-//             id={project.id}
-//             title={project.title}
-//             date={project.date}
-//             link={project.link}
-//             description={project.description}
-//             maintech={project.maintech}
-//             id_clients={project.id_clients}
-//             key={project.id}
-//           />
-//         );
-//       })
-//     )}
-//   </Row>
-// </>
+export default WilderBookProject;

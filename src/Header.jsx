@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import BurgerOpen from "./BurgerOpen";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const history = useHistory();
   const location = useLocation();
 
   const toggle = () => {
@@ -68,7 +67,7 @@ const ItemsList = styled.ul`
   }
 `;
 
-export const BurgerLogo = styled.div`
+const BurgerLogo = styled.div`
   width: 30px;
   height: 50px;
   margin-right: 10%;
@@ -81,7 +80,7 @@ export const BurgerLogo = styled.div`
   }
 `;
 
-export const Line = styled.div`
+const Line = styled.div`
   width: 100%;
   height: 5px;
   margin: 5px;

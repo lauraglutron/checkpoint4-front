@@ -6,23 +6,23 @@ const Projets = () => {
   return (
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm p-1 mt-4">
+        <div class="col-sm p-1 mt-5">
           <TitleProjects to="/wilderBookProject">WILDER BOOK</TitleProjects>
           <ImgProjects src={photo} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-4">
+        <div class="col-sm p-1 mt-5">
           <TitleProjects>KINGER</TitleProjects>
           <ImgProjects src={photo} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-4">
+        <div class="col-sm p-1 mt-5">
           <TitleProjects>PROGRAMMER HUMOR</TitleProjects>
           <ImgProjects src={photo} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-4">
+        <div class="col-sm p-1 mt-5">
           <TitleProjects>PIN MY RIDE</TitleProjects>
           <ImgProjects src={photo} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-4">
+        <div class="col-sm p-1 mt-5">
           <TitleProjects>MIREN POPPINS</TitleProjects>
           <ImgProjects src={photo} alt="photo projets" />
         </div>

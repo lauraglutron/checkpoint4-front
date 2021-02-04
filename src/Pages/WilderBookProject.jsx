@@ -72,7 +72,12 @@ const WilderBookProject = (props) => {
           <CardStyle body outline color="dark" className="text-center p-4">
             <CardTitle tag="h2">{projects[0].title}</CardTitle>
             <CardText>{projects[0].date}</CardText>
-            <CardText>{projects[0].link}</CardText>
+            <StyledAProject
+              href="https://github.com/lauraglutron"
+              target="blank"
+            >
+              <CardText>{projects[0].link}</CardText>
+            </StyledAProject>
             <hr />
             <CardText>{projects[0].description}</CardText>
             <CardText>{projects[0].maintech}</CardText>
@@ -86,6 +91,16 @@ const WilderBookProject = (props) => {
 
 const CardStyle = styled(Card)`
   letter-spacing: 0.1em;
+`;
+
+const StyledAProject = styled.a`
+  color: black;
+  padding: 0 20px;
+  letter-spacing: 0.1em;
+  &:hover {
+    color: #c5dccd;
+    text-decoration: none;
+  }
 `;
 
 export default WilderBookProject;

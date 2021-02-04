@@ -16,9 +16,9 @@ const DivButtonStyled = styled.div`
 `;
 
 const ButtonStyled = styled.button`
-  color: black;
-  background-color: transparent;
-  border: 0.1rem solid black;
+  color: #006762;
+  background-color: #c5dccd;
+  border: 0.1rem solid #c5dccd;
   border-radius: 0.5em;
   text-align: center;
   letter-spacing: 0.1em;

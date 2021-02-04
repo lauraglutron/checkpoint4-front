@@ -51,6 +51,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #f5fffa;
 `;
 
 const ItemsList = styled.ul`
@@ -88,20 +89,6 @@ export const Line = styled.div`
   background-color: #006762;
 `;
 
-const LogoHeader = styled.img`
-  width: 50px;
-  margin-left: 50px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  &:hover {
-    transition: transform 0.2s;
-    transform: scale(1.2);
-  }
-  @media (max-width: 768px) {
-    margin-top: 30px;
-  }
-`;
-
 const Navlink = styled.li`
   text-decoration: none;
   list-style: none;
@@ -115,6 +102,7 @@ const Navlink = styled.li`
 const StyledAHeader = styled(Link)`
   color: #006762;
   padding: 0 20px;
+  margin-left: 40px;
   letter-spacing: 0.1em;
   &:hover {
     color: #c5dccd;

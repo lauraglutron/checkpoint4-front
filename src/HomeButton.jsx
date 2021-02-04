@@ -4,7 +4,7 @@ const HomeButton = () => {
   return (
     <DivButtonStyled>
       <a href="/projets">
-        <ButtonStyled>Explorer les projets</ButtonStyled>
+        <ButtonStyled>Explorer mes projets</ButtonStyled>
       </a>
     </DivButtonStyled>
   );
@@ -23,7 +23,7 @@ const ButtonStyled = styled.button`
   text-align: center;
   letter-spacing: 0.1em;
   padding: 0.3rem 1.2rem;
-  margin: 1rem;
+  margin-top: 0.6rem;
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;

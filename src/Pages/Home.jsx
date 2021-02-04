@@ -6,7 +6,7 @@ const Home = (props) => {
   return (
     <DivHome>
       <Col sm="10" md={{ size: 8, offset: 2 }}>
-        <Jumbotron>
+        <JumbotronSyle>
           <TitleHome className="display-3">Hello, world!</TitleHome>
           <Paragraphe className="lead">
             Je suis Laura, développeuse web et web mobile junior à Biarritz.
@@ -18,7 +18,7 @@ const Home = (props) => {
             dans les médias avant de me reconvertir dans le développement web.
           </Paragraphe>
           <HomeButton />
-        </Jumbotron>
+        </JumbotronSyle>
       </Col>
     </DivHome>
   );
@@ -26,6 +26,10 @@ const Home = (props) => {
 
 const DivHome = styled.div`
   margin-top: 50px;
+`;
+
+const JumbotronSyle = styled(Jumbotron)`
+  background-color: transparent;
 `;
 
 const TitleHome = styled.h1`

@@ -4,7 +4,7 @@ import photo from "../ocean.jpg";
 
 const Projets = () => {
   return (
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
         <div class="col-sm p-1 mt-5">
           <TitleProjects to="/wilderBookProject">WILDER BOOK</TitleProjects>

@@ -62,7 +62,7 @@ const Contact = () => {
 };
 
 const TitleContact = styled.h2`
-  margin: 40px 0;
+  margin: 40px 10px;
   text-align: center;
   letter-spacing: 0.1em;
 `;

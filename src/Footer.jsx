@@ -29,12 +29,17 @@ const Footer = () => {
   );
 };
 const Wrapper = styled.div`
+  position: absolute;
+  bottom: 0;
   z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f5fffa;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const ItemsList = styled.ul`

@@ -1,6 +1,6 @@
 import { Form, FormGroup, Input, Col, Row, Container } from "reactstrap";
 import styled from "styled-components";
-import ContactButton from "../Button";
+import ContactButton from "../ContactButton";
 
 const Contact = () => {
   return (
@@ -8,7 +8,6 @@ const Contact = () => {
       <div>
         <TitleContact>Hello! Travaillons ensemble!</TitleContact>
       </div>
-
       <Container fluid>
         <RowReverse>
           <Col md={6}>

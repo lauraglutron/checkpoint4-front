@@ -6,35 +6,36 @@ const Footer = () => {
       <Wrapper light expand="md">
         <ItemsList>
           <Navlink>
-            <StyledAHeader
+            <StyledAFooter
               href="https://www.linkedin.com/in/laura-glutron/"
               target="blank"
             >
               Linkedin
-            </StyledAHeader>
+            </StyledAFooter>
           </Navlink>
           <Navlink>
-            <StyledAHeader
+            <StyledAFooter
               href="https://github.com/lauraglutron"
               target="blank"
             >
               Github
-            </StyledAHeader>
+            </StyledAFooter>
           </Navlink>
         </ItemsList>
       </Wrapper>
     </>
   );
 };
+
 const Wrapper = styled.div`
   position: absolute;
   bottom: 0;
   z-index: 10;
   width: 100%;
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5fffa;
+  background-color: #c5dccd;
   @media (max-width: 768px) {
     display: none;
   }
@@ -60,12 +61,12 @@ const Navlink = styled.li`
   }
 `;
 
-const StyledAHeader = styled.a`
+const StyledAFooter = styled.a`
   color: #006762;
   padding: 0 20px;
   letter-spacing: 0.1em;
   &:hover {
-    color: #c5dccd;
+    color: white;
     text-decoration: none;
   }
 `;

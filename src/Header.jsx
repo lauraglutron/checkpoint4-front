@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5fffa;
+  background-color: #c5dccd;
 `;
 
 const ItemsList = styled.ul`
@@ -104,7 +104,7 @@ const StyledAHeader = styled(Link)`
   margin-left: 40px;
   letter-spacing: 0.1em;
   &:hover {
-    color: #c5dccd;
+    color: white;
     text-decoration: none;
   }
 `;

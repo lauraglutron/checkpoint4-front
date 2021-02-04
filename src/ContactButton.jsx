@@ -27,9 +27,9 @@ const ButtonStyled = styled.button`
   cursor: pointer;
   transition-duration: 0.2s;
   &:hover {
-    color: black;
-    background-color: #f5fffa;
-    border: 0.1rem solid #f5fffa;
+    color: white;
+    background-color: #c5dccd;
+    border: 0.1rem solid #c5dccd;
   }
   &:focus {
     outline: none;

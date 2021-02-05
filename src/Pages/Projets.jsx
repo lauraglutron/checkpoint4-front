@@ -8,25 +8,25 @@ import surfers from "../Images/surfers.jpg";
 
 const Projets = () => {
   return (
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-sm p-1 mt-5">
+    <div className="container mb-5">
+      <div className="row">
+        <div className="col-sm p-1 mt-5">
           <TitleProjects2 to="/wilderBookProject">WILDER BOOK</TitleProjects2>
           <ImgProjects src={cotebasque} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-5">
+        <div className="col-sm p-1 mt-5">
           <TitleProjects>KINGER</TitleProjects>
           <ImgProjects src={noiretblanc} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-5">
+        <div className="col-sm p-1 mt-5">
           <TitleProjects>PROGRAMMER HUMOR</TitleProjects>
           <ImgProjects src={plage} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-5">
+        <div className="col-sm p-1 mt-5">
           <TitleProjects>PIN MY RIDE</TitleProjects>
           <ImgProjects src={portvieux} alt="photo projets" />
         </div>
-        <div class="col-sm p-1 mt-5">
+        <div className="col-sm p-1 mt-5">
           <TitleProjects2>MIREN POPPINS</TitleProjects2>
           <ImgProjects src={surfers} alt="photo projets" />
         </div>

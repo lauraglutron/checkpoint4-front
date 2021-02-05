@@ -65,10 +65,12 @@ const WilderBookProject = (props) => {
   return (
     <>
       <Row className="m-5">
-        <Col sm="6">
+        <Col sm="12" md={{ size: 8, offset: 2 }}>
           <UncontrolledCarousel items={items} />
         </Col>
-        <Col sm="6">
+      </Row>
+      <Row className="m-5">
+        <Col sm="12" md={{ size: 8, offset: 2 }}>
           <CardStyle body outline color="dark" className="text-center p-4">
             <CardTitle tag="h2">{projects[0].title}</CardTitle>
             <CardText>réalisé en {projects[0].date}</CardText>
@@ -82,7 +84,9 @@ const WilderBookProject = (props) => {
             <hr />
             <CardText>{projects[0].description}</CardText>
             <hr />
-            <CardText>stacks techniques: {projects[0].maintech}</CardText>
+            <CardText>stacks techniques: </CardText>
+
+            <CardText>{projects[0].maintech}</CardText>
           </CardStyle>
         </Col>
       </Row>

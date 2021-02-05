@@ -1,30 +1,34 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import photo from "../ocean.jpg";
+import cotebasque from "../Images/cotebasque.jpg";
+import noiretblanc from "../Images/noiretblanc.jpg";
+import plage from "../Images/plage.jpg";
+import portvieux from "../Images/portvieux.jpg";
+import surfers from "../Images/surfers.jpg";
 
 const Projets = () => {
   return (
     <div class="container mb-5">
       <div class="row">
         <div class="col-sm p-1 mt-5">
-          <TitleProjects to="/wilderBookProject">WILDER BOOK</TitleProjects>
-          <ImgProjects src={photo} alt="photo projets" />
+          <TitleProjects2 to="/wilderBookProject">WILDER BOOK</TitleProjects2>
+          <ImgProjects src={cotebasque} alt="photo projets" />
         </div>
         <div class="col-sm p-1 mt-5">
           <TitleProjects>KINGER</TitleProjects>
-          <ImgProjects src={photo} alt="photo projets" />
+          <ImgProjects src={noiretblanc} alt="photo projets" />
         </div>
         <div class="col-sm p-1 mt-5">
           <TitleProjects>PROGRAMMER HUMOR</TitleProjects>
-          <ImgProjects src={photo} alt="photo projets" />
+          <ImgProjects src={plage} alt="photo projets" />
         </div>
         <div class="col-sm p-1 mt-5">
           <TitleProjects>PIN MY RIDE</TitleProjects>
-          <ImgProjects src={photo} alt="photo projets" />
+          <ImgProjects src={portvieux} alt="photo projets" />
         </div>
         <div class="col-sm p-1 mt-5">
-          <TitleProjects>MIREN POPPINS</TitleProjects>
-          <ImgProjects src={photo} alt="photo projets" />
+          <TitleProjects2>MIREN POPPINS</TitleProjects2>
+          <ImgProjects src={surfers} alt="photo projets" />
         </div>
       </div>
     </div>
@@ -50,6 +54,23 @@ const TitleProjects = styled(Link)`
   padding-bottom: 25px;
   font-size: 20px;
   color: white;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+`;
+
+const TitleProjects2 = styled(Link)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  transform: translate(-50%, -50%);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 20px;
+  color: black;
   &:hover {
     color: white;
     text-decoration: none;

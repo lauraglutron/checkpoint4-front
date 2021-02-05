@@ -46,6 +46,7 @@ const Contact = () => {
               </FormGroup>
               <FormGroup>
                 <Input
+                  style={{ resize: "none" }}
                   type="textarea"
                   name="message"
                   id="exampleText"

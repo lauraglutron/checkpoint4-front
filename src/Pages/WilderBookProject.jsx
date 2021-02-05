@@ -71,7 +71,8 @@ const WilderBookProject = (props) => {
         <Col sm="6">
           <CardStyle body outline color="dark" className="text-center p-4">
             <CardTitle tag="h2">{projects[0].title}</CardTitle>
-            <CardText>{projects[0].date}</CardText>
+            <CardText>réalisé en {projects[0].date}</CardText>
+            <CardText>pour le client {projects[0].clients_name}</CardText>
             <StyledAProject
               href="https://github.com/lauraglutron"
               target="blank"
@@ -80,8 +81,8 @@ const WilderBookProject = (props) => {
             </StyledAProject>
             <hr />
             <CardText>{projects[0].description}</CardText>
-            <CardText>{projects[0].maintech}</CardText>
-            <CardText>{projects[0].id_clients}</CardText>
+            <hr />
+            <CardText>stacks techniques: {projects[0].maintech}</CardText>
           </CardStyle>
         </Col>
       </Row>
